@@ -25,7 +25,7 @@ After creating the csv from the audio files, you can train the model by executin
 ```sh
 python3 training/model_training.py --src-file converted/converted_audio.csv --dest-file models/emotion_classifier.h5
 ```
-In this repository, there is already a pretrained model inside the [models] folder, so the above step can be skipped.
+In this repository, there is already a pretrained model inside the [models] folder, so the above step can be skipped. The optimal hyper parameters of the model, were choosen after an analysis that was perfomed. This analysis can be found inside Model_Tunning folder as a .ipynb file.
 
 ## Deployment
 Not yet implemented..
