@@ -33,7 +33,7 @@ that will be used to predict the emotion of the audio file given. To run the scr
 ```sh
 python3 main.py --src-file my_audio_file.wav --model-file models/emotion_classifier.h5
 ```
-The script will print the prediction, but if you want to save it in a file, u can use the '>' operator in UNIX-based systems
+The script will print the prediction, but if you want to save it in a file, you can use the '>' operator in UNIX-based systems
 
 ## License
 
