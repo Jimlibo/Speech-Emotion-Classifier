@@ -80,14 +80,17 @@ class AudioConverter:
         # checks about source directory
         if src_dir is None:
             print("src_dir is required!")
+            exit(1)
         elif not os.path.exists(src_dir) and src_dir is not None:
             print("src_dir {} does not exist!".format(src_dir))
+            exit(1)
         else:
             self.src_dir = src_dir
 
         # checks about destination file
         if dest_file is None:
             print("dest_file is required!")
+            exit(1)
         else:
             self.dest_file = dest_file
 
