@@ -44,15 +44,18 @@ def create_model(d1, d2, dr, input_shape):
 class ModelTrainer:
     def __init__(self, src_file=None, dest_file=None):
         if src_file is None:
-            print("src_dir is required!")
+            print("src_file is required!")
+            exit(1)
         elif not os.path.exists(src_file):
-            print("src_dir {} does not exist!".format(src_file))
+            print("src_file {} does not exist!".format(src_file))
+            exit(1)
         else:
             self.src_file = src_file
 
         # checks about destination file
         if dest_file is None:
             print("dest_file is required!")
+            exit(1)
         else:
             self.dest_file = dest_file
 
